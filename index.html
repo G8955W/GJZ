@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ 鬼哥的配置 - 已填完 ============ -->
+<script>
+window.DT_CONFIG = {
+  bmc: 'zimeiti289n',
+  lemonMatrix: 'https://decisionterminator.lemonsqueezy.com/checkout/buy/a7462179-88f2-47d4-b93e-25c1b75149ed',
+  lemonPlanner: 'https://decisionterminator.lemonsqueezy.com/checkout/buy/aa57cc99-7a86-4547-a5d2-600ab199edf7',
+  lemonPriority: 'https://decisionterminator.lemonsqueezy.com/checkout/buy/9b118c6f-b8a6-40fa-89e6-2e1cdeb69a56',
+  gaId: 'G-72W2MM2RGK',
+};
+</script>
+<!-- ========================================================== -->
+
+<title>Decision Terminator — Free Decision-Making Tools Online</title>
+<meta name="description" content="14 free online decision-making tools. Flip a coin, roll dice, pick randomly, make better choices. No sign-up required. Stop overthinking, start doing.">
+<meta name="keywords" content="decision maker, coin flip, random picker, dice roller, decision matrix, online tool, free tool">
+<link rel="canonical" href="https://decision-terminator.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Decision Terminator — Stop Second-Guessing. Start Living.">
+<meta property="og:description" content="14 free decision tools. No sign-up. Just pick a tool and get an answer.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://decision-terminator.com/">
+<meta property="og:site_name" content="Decision Terminator">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Decision Terminator — Free Decision Tools">
+<meta name="twitter:description" content="14 free tools to stop overthinking. Coin flip, dice roller, decision matrix and more. No sign-up, no ads, no BS.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Decision Terminator",
+  "url": "https://decision-terminator.com/",
+  "description": "14 free online decision-making tools. No sign-up required.",
+  "applicationCategory": "Utility",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+<!-- Google Analytics placeholder (鬼哥替换后生效) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-72W2MM2RGK"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-72W2MM2RGK', { 'anonymize_ip': true });
+</script>
+
+<style>
+/* ============================================
+   DESIGN TOKENS
+   ============================================ */
+:root {
+  --brand:        oklch(0.50 0.18 270);
+  --brand-deep:   oklch(0.18 0.03 270);
+  --brand-soft:   oklch(0.92 0.03 270);
+  --brand-muted:  oklch(0.85 0.05 270);
+  --accent:       oklch(0.68 0.20 42);
+  --accent-light: oklch(0.95 0.03 42);
+  --surface-0:    oklch(1.00 0 0);
+  --surface-1:    oklch(0.98 0.005 270);
+  --surface-2:    oklch(0.95 0.008 270);
+  --text-primary: oklch(0.15 0.01 270);
+  --text-secondary: oklch(0.42 0.01 270);
+  --text-muted:   oklch(0.62 0.008 270);
+  --border:       oklch(0.88 0.008 270);
+  --border-light: oklch(0.93 0.005 270);
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --support-glow: oklch(0.68 0.20 42 / 0.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--surface-1);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { color: var(--brand-deep); }
+::selection { background: var(--brand-soft); color: var(--brand-deep); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-xl); }
+
+/* ============ NAV ============ */
+.site-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: oklch(1 0 0 / 0.85); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+}
+.site-nav .container { display: flex; align-items: center; justify-content: space-between; height: 4rem; }
+.nav-brand { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.01em; color: var(--brand-deep); }
+.nav-tag { font-size: 0.8125rem; color: var(--text-muted); }
+.nav-support-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0.5rem 1rem; background: var(--accent); color: #fff;
+  font-size: 0.8125rem; font-weight: 500; border-radius: 2px;
+  transition: opacity 0.2s;
+}
+.nav-support-btn:hover { opacity: 0.85; color: #fff; }
+
+/* ============ HERO ============ */
+.hero { padding: var(--space-5xl) 0 var(--space-4xl); text-align: left; }
+.hero-eyebrow { font-family: var(--font-display); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: var(--space-lg); }
+.hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; color: var(--brand-deep); max-width: 14ch; margin-bottom: var(--space-xl); }
+.hero h1 .highlight { color: var(--brand); }
+.hero p { font-size: clamp(1.0625rem, 1.5vw, 1.25rem); line-height: 1.65; color: var(--text-secondary); max-width: 42ch; margin-bottom: var(--space-2xl); }
+.hero-stats { display: flex; gap: var(--space-3xl); }
+.hero-stat { display: flex; flex-direction: column; gap: var(--space-xs); }
+.hero-stat-number { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--brand-deep); letter-spacing: -0.01em; }
+.hero-stat-label { font-size: 0.8125rem; color: var(--text-muted); }
+
+/* ============ SECTION UTILITY ============ */
+.section-rule { border: none; height: 1px; background: var(--border); margin: 0; }
+
+/* ============ TOOLS SECTION ============ */
+.tools-section { padding: var(--space-4xl) 0 var(--space-5xl); }
+.section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--space-3xl); flex-wrap: wrap; gap: var(--space-md); }
+.section-header h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; letter-spacing: -0.01em; color: var(--brand-deep); }
+.section-header .count { font-size: 0.875rem; color: var(--text-muted); }
+
+.tool-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-md); }
+.tool-card {
+  grid-column: span 3; background: var(--surface-0); border: 1px solid var(--border-light);
+  border-radius: 2px; padding: var(--space-xl) var(--space-lg);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+  cursor: pointer; position: relative; overflow: hidden;
+}
+.tool-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--brand); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.3s;
+}
+.tool-card:hover { border-color: var(--brand-muted); box-shadow: 0 4px 16px oklch(0 0 0 / 0.06); transform: translateY(-2px); }
+.tool-card:hover::before { transform: scaleX(1); }
+.tool-card.featured { grid-column: span 6; display: flex; gap: var(--space-xl); align-items: flex-start; }
+.tool-card.featured .tool-icon { font-size: 2.5rem; }
+.tool-card.featured .tool-body { flex: 1; }
+.tool-icon { font-size: 1.5rem; line-height: 1; margin-bottom: var(--space-md); }
+.tool-tag { display: inline-block; font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--space-sm); }
+.tool-name { font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; color: var(--brand-deep); margin-bottom: var(--space-sm); line-height: 1.25; }
+.tool-desc { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.55; }
+.tool-link { display: inline-flex; align-items: center; gap: var(--space-xs); margin-top: var(--space-md); font-size: 0.8125rem; font-weight: 500; color: var(--brand); transition: gap 0.2s; }
+.tool-link::after { content: '→'; transition: transform 0.2s; }
+.tool-card:hover .tool-link { gap: var(--space-sm); }
+.tool-card:hover .tool-link::after { transform: translateX(2px); }
+
+/* ============ FLOATING SUPPORT BUTTON ============ */
+.floating-support {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+  display: flex; align-items: center; gap: 10px;
+}
+.floating-support-label {
+  background: var(--surface-0); border: 1px solid var(--border-light);
+  padding: 0.5rem 1rem; border-radius: 2px;
+  font-size: 0.8125rem; color: var(--text-secondary);
+  opacity: 0; transform: translateX(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none; white-space: nowrap;
+}
+.floating-support:hover .floating-support-label { opacity: 1; transform: translateX(0); }
+.floating-support-btn {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--accent); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; box-shadow: 0 4px 16px var(--support-glow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.floating-support-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px var(--support-glow); }
+.floating-support-btn .bmc-heart { color: #fff; font-size: 1.25rem; }
+
+/* ============ TOOL MODAL ============ */
+.tool-modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: oklch(0 0 0 / 0.4); z-index: 200;
+  display: none; align-items: center; justify-content: center;
+  padding: var(--space-xl); backdrop-filter: blur(4px);
+}
+.tool-modal-overlay.active { display: flex; }
+.tool-modal {
+  background: var(--surface-0); width: 100%; max-width: 600px;
+  border-radius: 4px; max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 24px 64px oklch(0 0 0 / 0.2);
+  animation: modalIn 0.25s ease;
+}
+@keyframes modalIn { from { opacity: 0; transform: translateY(20px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.tool-modal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-lg) var(--space-xl); border-bottom: 1px solid var(--border-light);
+}
+.tool-modal-title { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; color: var(--brand-deep); }
+.tool-modal-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-muted); padding: 4px; line-height: 1; transition: color 0.2s; }
+.tool-modal-close:hover { color: var(--text-primary); }
+.tool-modal-body { padding: var(--space-xl); }
+
+/* Tool result display */
+.tool-result-area {
+  min-height: 120px; display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: var(--space-md); text-align: center;
+  padding: var(--space-2xl) 0;
+}
+.tool-result-value {
+  font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600; color: var(--brand-deep); line-height: 1;
+  transition: all 0.3s;
+}
+.tool-result-label { font-size: 0.9375rem; color: var(--text-secondary); }
+.tool-result-animating .tool-result-value { animation: popResult 0.4s ease; }
+@keyframes popResult { 0% { transform: scale(0.3); opacity: 0; } 50% { transform: scale(1.15); } 100% { transform: scale(1); opacity: 1; } }
+
+.tool-btn {
+  padding: 0.75rem 2rem; background: var(--brand-deep); color: #fff;
+  font-family: var(--font-display); font-size: 0.9375rem; font-weight: 500;
+  border: none; border-radius: 2px; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.tool-btn:hover { background: var(--brand); transform: translateY(-1px); }
+.tool-btn:active { transform: translateY(0); }
+.tool-btn-outline {
+  background: transparent; color: var(--brand-deep); border: 1px solid var(--border);
+}
+.tool-btn-outline:hover { background: var(--surface-1); border-color: var(--brand-muted); transform: translateY(-1px); }
+
+.tool-input-group { display: flex; flex-direction: column; gap: var(--space-sm); margin-bottom: var(--space-lg); }
+.tool-input-group label { font-size: 0.875rem; font-weight: 500; color: var(--text-primary); }
+.tool-input-group input, .tool-input-group textarea, .tool-input-group select {
+  padding: 0.625rem 0.875rem; border: 1px solid var(--border); border-radius: 2px;
+  font-family: var(--font-body); font-size: 0.9375rem; color: var(--text-primary);
+  background: var(--surface-0); transition: border-color 0.2s;
+}
+.tool-input-group input:focus, .tool-input-group textarea:focus, .tool-input-group select:focus {
+  outline: none; border-color: var(--brand-muted);
+}
+.tool-input-group textarea { min-height: 80px; resize: vertical; }
+.tool-options-row { display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: center; }
+
+/* ============ AFFILIATE RECOMMENDATIONS ============ */
+.affiliate-recs {
+  margin-top: var(--space-xl); padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-light);
+}
+.affiliate-recs-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: var(--space-md); }
+.affiliate-recs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+.affiliate-card {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border: 1px solid var(--border-light);
+  border-radius: 2px; transition: border-color 0.2s, background 0.2s;
+  font-size: 0.8125rem; color: var(--text-secondary); cursor: pointer;
+}
+.affiliate-card:hover { border-color: var(--brand-muted); background: var(--surface-1); color: var(--brand-deep); }
+.affiliate-card-emoji { font-size: 1.25rem; flex-shrink: 0; }
+.affiliate-card-text { line-height: 1.3; }
+.affiliate-card-label { font-size: 0.6875rem; color: var(--text-muted); }
+.affiliate-disclosure { font-size: 0.6875rem; color: var(--text-muted); margin-top: var(--space-sm); text-align: center; }
+
+/* ============ SUPPORT OPTIONS POPUP ============ */
+.support-popup {
+  position: fixed; bottom: 6rem; right: 2rem; z-index: 98;
+  background: var(--surface-0); border: 1px solid var(--border-light);
+  border-radius: 4px; padding: var(--space-lg); min-width: 220px;
+  box-shadow: 0 8px 32px oklch(0 0 0 / 0.12);
+  display: none; flex-direction: column; gap: var(--space-sm);
+}
+.support-popup.active { display: flex; }
+.support-popup h4 { font-family: var(--font-display); font-size: 0.875rem; font-weight: 600; color: var(--brand-deep); margin-bottom: var(--space-sm); }
+.support-popup a {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; border: 1px solid var(--border-light); border-radius: 2px;
+  font-size: 0.875rem; color: var(--text-secondary); transition: all 0.2s;
+}
+.support-popup a:hover { border-color: var(--brand-muted); background: var(--surface-1); color: var(--brand-deep); }
+
+/* ============ PREMIUM PRODUCTS ============ */
+.products-section { padding: var(--space-4xl) 0; background: var(--surface-0); }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); }
+.product-card {
+  border: 1px solid var(--border-light); padding: var(--space-xl);
+  display: flex; flex-direction: column; gap: var(--space-md);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.product-card:hover { border-color: var(--brand-muted); box-shadow: 0 4px 16px oklch(0 0 0 / 0.06); }
+.product-emoji { font-size: 2rem; }
+.product-card h3 { font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; color: var(--brand-deep); }
+.product-card p { font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.55; flex: 1; }
+.product-price { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; color: var(--brand); }
+.product-btn {
+  padding: 0.625rem 1.5rem; background: var(--brand-deep); color: #fff;
+  font-family: var(--font-display); font-size: 0.8125rem; font-weight: 500;
+  border: none; border-radius: 2px; cursor: pointer; text-align: center;
+  transition: background 0.2s;
+}
+.product-btn:hover { background: var(--brand); }
+
+/* ============ HOW IT WORKS ============ */
+.how-section { padding: var(--space-4xl) 0 var(--space-5xl); background: var(--surface-1); }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); }
+.step { padding: var(--space-2xl) var(--space-lg) var(--space-xl); border-left: 2px solid var(--border); transition: border-color 0.3s; }
+.step:hover { border-left-color: var(--brand); }
+.step-number { font-family: var(--font-display); font-size: 3rem; font-weight: 300; color: var(--brand-soft); line-height: 1; margin-bottom: var(--space-md); }
+.step h3 { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.01em; color: var(--brand-deep); margin-bottom: var(--space-sm); }
+.step p { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* ============ CTA / EMAIL ============ */
+.cta-section { padding: var(--space-5xl) 0; text-align: center; }
+.cta-section h2 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 600; letter-spacing: -0.02em; color: var(--brand-deep); max-width: 18ch; margin: 0 auto var(--space-md); line-height: 1.15; }
+.cta-section p { font-size: 1.0625rem; color: var(--text-secondary); max-width: 48ch; margin: 0 auto var(--space-2xl); }
+.cta-btn {
+  display: inline-flex; align-items: center; gap: var(--space-sm);
+  padding: 1rem 2rem; background: var(--brand-deep); color: #fff;
+  font-family: var(--font-display); font-size: 1rem; font-weight: 500;
+  border: none; border-radius: 2px; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.cta-btn:hover { background: var(--brand); color: #fff; transform: translateY(-1px); }
+
+.email-form { display: flex; gap: var(--space-sm); max-width: 420px; margin: var(--space-xl) auto 0; }
+.email-form input {
+  flex: 1; padding: 0.75rem 1rem; border: 1px solid var(--border);
+  border-radius: 2px; font-family: var(--font-body); font-size: 0.9375rem;
+}
+.email-form input:focus { outline: none; border-color: var(--brand-muted); }
+.email-form button {
+  padding: 0.75rem 1.5rem; background: var(--accent); color: #fff;
+  border: none; border-radius: 2px; font-family: var(--font-display);
+  font-size: 0.9375rem; font-weight: 500; cursor: pointer; white-space: nowrap;
+  transition: opacity 0.2s;
+}
+.email-form button:hover { opacity: 0.85; }
+.email-note { font-size: 0.75rem; color: var(--text-muted); margin-top: var(--space-sm); }
+
+/* ============ EMAIL MODAL ============ */
+.email-modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: oklch(0 0 0 / 0.5); z-index: 300;
+  display: none; align-items: center; justify-content: center;
+  padding: var(--space-xl); backdrop-filter: blur(4px);
+}
+.email-modal-overlay.active { display: flex; }
+.email-modal {
+  background: var(--surface-0); max-width: 440px; width: 100%;
+  padding: var(--space-2xl); border-radius: 4px; text-align: center;
+  box-shadow: 0 24px 64px oklch(0 0 0 / 0.25);
+  animation: modalIn 0.3s ease;
+  position: relative;
+}
+.email-modal-close {
+  position: absolute; top: var(--space-md); right: var(--space-md);
+  background: none; border: none; font-size: 1.25rem; cursor: pointer;
+  color: var(--text-muted); line-height: 1;
+}
+.email-modal h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 600; color: var(--brand-deep); margin-bottom: var(--space-sm); }
+.email-modal p { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: var(--space-lg); }
+.email-modal .email-form { margin: 0 auto; }
+
+/* ============ FOOTER ============ */
+.site-footer { padding: var(--space-3xl) 0 var(--space-2xl); border-top: 1px solid var(--border); background: var(--surface-0); }
+.footer-grid { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: var(--space-2xl); margin-bottom: var(--space-3xl); }
+.footer-brand p { font-size: 0.875rem; color: var(--text-muted); max-width: 28ch; margin-top: var(--space-md); line-height: 1.6; }
+.footer-col h4 { font-family: var(--font-display); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--space-md); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: var(--space-sm); }
+.footer-col a { font-size: 0.875rem; color: var(--text-secondary); transition: color 0.15s; }
+.footer-col a:hover { color: var(--brand); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: var(--space-xl); border-top: 1px solid var(--border-light); font-size: 0.75rem; color: var(--text-muted); }
+.footer-bottom nav { display: flex; gap: var(--space-lg); }
+.footer-bottom a { font-size: 0.75rem; color: var(--text-muted); }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .tool-card { grid-column: span 4; }
+  .tool-card.featured { grid-column: span 8; }
+  .steps { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-xl); }
+  .hero { padding: var(--space-4xl) 0 var(--space-3xl); }
+}
+@media (max-width: 600px) {
+  .tool-card { grid-column: span 6; }
+  .tool-card.featured { grid-column: span 12; flex-direction: column; gap: var(--space-md); }
+  .hero-stats { flex-direction: column; gap: var(--space-xl); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .section-header { flex-direction: column; }
+  .container { padding: 0 var(--space-md); }
+  .affiliate-recs-grid { grid-template-columns: 1fr; }
+  .email-form { flex-direction: column; }
+  .nav-tag { display: none; }
+  .floating-support { bottom: 1rem; right: 1rem; }
+  .floating-support-btn { width: 48px; height: 48px; font-size: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="site-nav">
+  <div class="container">
+    <a href="/" class="nav-brand">Decision Terminator</a>
+    <div style="display:flex;align-items:center;gap:var(--space-md)">
+      <span class="nav-tag">14 tools · No sign-up</span>
+      <a href="#" class="nav-support-btn" onclick="event.preventDefault();toggleSupportPopup();gtag('event','support_nav_click');">☕ Support Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Stop second-guessing. Start living.</p>
+    <h1>Decisions,<br>made <span class="highlight">simple</span>.</h1>
+    <p>Fourteen free tools that stop the overthinking spiral. No accounts, no ads, no BS. Pick a tool, get an answer, move on with your life.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-number">14</span><span class="hero-stat-label">Decision tools</span></div>
+      <div class="hero-stat"><span class="hero-stat-number">0</span><span class="hero-stat-label">Sign-ups required</span></div>
+      <div class="hero-stat"><span class="hero-stat-number">&lt;5s</span><span class="hero-stat-label">Average answer time</span></div>
+    </div>
+  </div>
+</header>
+
+<hr class="section-rule">
+
+<!-- ============ TOOLS ============ -->
+<section class="tools-section" id="tools">
+  <div class="container">
+    <div class="section-header">
+      <h2>Pick your weapon</h2>
+      <span class="count">Click any tool to use it instantly</span>
+    </div>
+    <div class="tool-grid" id="toolGrid">
+      <!-- Cards are generated by JS -->
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ============ PREMIUM PRODUCTS (Gumroad) ============ -->
+<section class="products-section" id="premium">
+  <div class="container">
+    <div class="section-header">
+      <h2>📄 Premium resources</h2>
+      <span class="count">Printable PDFs for deeper decisions</span>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-emoji">📊</div>
+        <h3>Decision Matrix Workbook</h3>
+        <p>A printable decision matrix template with scoring guides. Perfect for career moves, purchases, and life choices that need more than a coin flip.</p>
+        <span class="product-price">$4.99</span>
+        <a href="https://decisionterminator.lemonsqueezy.com/checkout/buy/a7462179-88f2-47d4-b93e-25c1b75149ed" target="_blank" rel="noopener" class="product-btn" onclick="gtag('event','lemon_click',{'product':'matrix'});">Buy on LemonSqueezy →</a>
+      </div>
+      <div class="product-card">
+        <div class="product-emoji">📓</div>
+        <h3>Anti-Overthinking Planner</h3>
+        <p>A 30-day decision journal. Track what you decided, why, and how it turned out. Break the rumination cycle one page at a time.</p>
+        <span class="product-price">$5.99</span>
+        <a href="https://decisionterminator.lemonsqueezy.com/checkout/buy/aa57cc99-7a86-4547-a5d2-600ab199edf7" target="_blank" rel="noopener" class="product-btn" onclick="gtag('event','lemon_click',{'product':'planner'});">Buy on LemonSqueezy →</a>
+      </div>
+      <div class="product-card">
+        <div class="product-emoji">📋</div>
+        <h3>Priority Master Sheet</h3>
+        <p>One-page priority matrix to sort your tasks by urgency and impact. Print one every week. Stop juggling, start executing.</p>
+        <span class="product-price">$3.99</span>
+        <a href="https://decisionterminator.lemonsqueezy.com/checkout/buy/9b118c6f-b8a6-40fa-89e6-2e1cdeb69a56" target="_blank" rel="noopener" class="product-btn" onclick="gtag('event','lemon_click',{'product':'priority'});">Buy on LemonSqueezy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how-section">
+  <div class="container">
+    <div class="section-header"><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Can't decide?</h3>
+        <p>Pick the tool that matches your problem. Binary choice? Coin flip. Multiple options? Random picker. Big life decision? Decision matrix.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Let the tool work</h3>
+        <p>One click. The tool does the rest. No second-guessing, no back button, no "but what if." Math and randomness don't have anxiety.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Accept and move on</h3>
+        <p>Answer received. Decision made. Close the tab and do the thing. The best decision is the one you actually execute.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule">
+
+<!-- ============ CTA + EMAIL ============ -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to stop overthinking?</h2>
+    <p>Every minute you spend choosing is a minute you don't spend doing.</p>
+    <form class="email-form" id="emailForm" onsubmit="return handleEmailSubmit(event)">
+      <input type="email" id="emailInput" placeholder="Get 1 decision tip per week →" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="email-note">No spam. Unsubscribe anytime. ~1 email/week.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-brand">Decision Terminator</a>
+        <p>Free decision-making tools for people who'd rather act than agonize. Built for clarity, not clicks.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Tools</h4>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault();openTool('coin')">Coin Flip</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('yesno')">Yes / No Generator</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('dice')">Dice Roller</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('random')">Random Picker</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Advanced</h4>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault();openTool('matrix')">Decision Matrix</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('priority')">Priority List</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('team')">Team Picker</a></li>
+          <li><a href="#" onclick="event.preventDefault();openTool('password')">Password Generator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault();window.open('https://buymeacoffee.com/zimeiti289n','_blank');gtag('event','footer_bmc');">☕ Buy us a coffee</a></li>
+          <li><a href="#" onclick="event.preventDefault();document.getElementById('emailInput').focus();">📬 Weekly newsletter</a></li>
+          <li><a href="#premium">📄 Premium PDFs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Decision Terminator</span>
+      <nav>
+        <span style="font-size:0.75rem;color:var(--text-muted)">Free tools + premium PDFs for better decisions.</span>
+        <a href="#" onclick="event.preventDefault();">Privacy</a>
+        <a href="#" onclick="event.preventDefault();">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING SUPPORT BUTTON ============ -->
+<div class="floating-support" id="floatingSupport">
+  <span class="floating-support-label">Love the tools? ☕</span>
+  <button class="floating-support-btn" onclick="toggleSupportPopup();gtag('event','support_float_click');" aria-label="Support us">
+    <span class="bmc-heart">☕</span>
+  </button>
+</div>
+
+<!-- ============ SUPPORT POPUP ============ -->
+<div class="support-popup" id="supportPopup">
+  <h4>Support Decision Terminator</h4>
+  <a href="https://buymeacoffee.com/zimeiti289n" target="_blank" rel="noopener" onclick="gtag('event','bmc_popup');">☕ Buy me a coffee</a>
+  <a href="https://decisionterminator.lemonsqueezy.com/checkout/buy/a7462179-88f2-47d4-b93e-25c1b75149ed" target="_blank" rel="noopener" onclick="gtag('event','products_popup');">📄 Best-selling PDF</a>
+  <a href="#premium" onclick="gtag('event','premium_popup');closeSupportPopup();">📄 Premium PDFs</a>
+</div>
+
+<!-- ============ TOOL MODAL ============ -->
+<div class="tool-modal-overlay" id="toolModalOverlay" onclick="if(event.target===this)closeTool()">
+  <div class="tool-modal" id="toolModal">
+    <div class="tool-modal-header">
+      <span class="tool-modal-title" id="toolModalTitle">Tool</span>
+      <button class="tool-modal-close" onclick="closeTool()">✕</button>
+    </div>
+    <div class="tool-modal-body" id="toolModalBody">
+      <!-- Tool content generated by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ============ EMAIL MODAL ============ -->
+<div class="email-modal-overlay" id="emailModal" onclick="if(event.target===this)closeEmailModal()">
+  <div class="email-modal">
+    <button class="email-modal-close" onclick="closeEmailModal()">✕</button>
+    <h3>🧠 One decision tip, every Tuesday</h3>
+    <p>No fluff. No spam. Just one actionable framework to make better choices — delivered to your inbox.</p>
+    <form class="email-form" onsubmit="return handleEmailSubmit(event)">
+      <input type="email" placeholder="Your best email" required aria-label="Email address">
+      <button type="submit">Join free</button>
+    </form>
+    <p class="email-note" style="margin-top:var(--space-md)">Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script>
+/* ============================================
+   CONFIG (read from head's DT_CONFIG)
+   ============================================ */
+const CFG = window.DT_CONFIG || {};
+const BMC = CFG.bmc || 'zimeiti289n';
+const AMZ = 'decisionter-20';  // Amazon tag placeholder — replace when you get your Associates ID
+const GA = CFG.gaId || 'G-72W2MM2RGK';
+const LEMON = {
+  matrix: CFG.lemonMatrix || 'https://decisionterminator.lemonsqueezy.com/checkout/buy/a7462179-88f2-47d4-b93e-25c1b75149ed',
+  planner: CFG.lemonPlanner || 'https://decisionterminator.lemonsqueezy.com/checkout/buy/aa57cc99-7a86-4547-a5d2-600ab199edf7',
+  priority: CFG.lemonPriority || 'https://decisionterminator.lemonsqueezy.com/checkout/buy/9b118c6f-b8a6-40fa-89e6-2e1cdeb69a56',
+};
+
+/* ============================================
+   TOOL DATA
+   ============================================ */
+const TOOLS = [
+  { id:'coin',       icon:'🪙', name:'Coin Flip',         tag:'Quick',    desc:'Flip a coin. Heads or tails. No second-guessing.', featured:true },
+  { id:'matrix',     icon:'📊', name:'Decision Matrix',    tag:'Advanced', desc:'Weight your criteria. Let math decide.', featured:true },
+  { id:'eat',        icon:'🍔', name:'What to Eat',        tag:'Popular',  desc:'End the group-chat food debate in one click.' },
+  { id:'picker',     icon:'🎲', name:'Random Picker',      tag:'Quick',    desc:'Throw in any options. Get one winner. No drama.' },
+  { id:'8ball',      icon:'🎱', name:'Magic 8-Ball',       tag:'Fun',      desc:'The classic oracle. Ask. Shake. Believe.' },
+  { id:'random',     icon:'🔢', name:'Random Number',      tag:'Quick',    desc:'Instant random number. Set range. Done.' },
+  { id:'dice',       icon:'🎲', name:'Dice Roller',        tag:'Classic',  desc:'Roll 1 to 100 dice. Board game night\'s best friend.' },
+  { id:'password',   icon:'🔑', name:'Password Generator', tag:'Utility',  desc:'Strong passwords, generated instantly.' },
+  { id:'team',       icon:'👥', name:'Team Picker',        tag:'Teams',    desc:'Split groups fast. Fair teams, zero arguments.' },
+  { id:'rps',        icon:'✂️', name:'Rock Paper Scissors',tag:'Game',     desc:'Play against the machine. Best of one.' },
+  { id:'yesno',      icon:'✅', name:'Yes / No Generator', tag:'Quick',    desc:'One question. One answer. No explanations.' },
+  { id:'namegen',    icon:'📝', name:'Name Generator',     tag:'Creative', desc:'Random names for characters, projects, or pets.' },
+  { id:'truthdare',  icon:'🎉', name:'Truth or Dare',      tag:'Party',    desc:'Classic party game. Questions included.' },
+  { id:'priority',   icon:'📋', name:'Priority List',      tag:'Organize', desc:'Sort what actually matters first.' },
+];
+
+/* ============================================
+   AFFILIATE RECOMMENDATIONS PER TOOL
+   ============================================ */
+const AFFILIATES = {
+  coin: [
+    { emoji:'📚', text:'<b>Thinking, Fast and Slow</b><br><span class="affiliate-card-label">The decision-making bible</span>', url:`https://www.amazon.com/dp/0374533555?tag=${AMZ}` },
+    { emoji:'🪙', text:'<b>Lucky Coin</b><br><span class="affiliate-card-label">A physical coin you\'ll never lose</span>', url:`https://www.amazon.com/dp/B08XYZ?tag=${AMZ}` },
+  ],
+  yesno: [
+    { emoji:'📚', text:'<b>Decisive</b> by Chip Heath<br><span class="affiliate-card-label">How to make better choices</span>', url:`https://www.amazon.com/dp/0307956393?tag=${AMZ}` },
+    { emoji:'📱', text:'<b>Todoist Premium</b><br><span class="affiliate-card-label">Stop deciding what to do next</span>', url:`https://todoist.com/` },
+  ],
+  dice: [
+    { emoji:'🎲', text:'<b>Polyhedral Dice Set</b><br><span class="affiliate-card-label">7-die set for any game</span>', url:`https://www.amazon.com/dp/B07XYZ?tag=${AMZ}` },
+    { emoji:'🎲', text:'<b>100-Pack 6-Sided Dice</b><br><span class="affiliate-card-label">For the serious roller</span>', url:`https://www.amazon.com/dp/B07ABC?tag=${AMZ}` },
+  ],
+  random: [
+    { emoji:'📚', text:'<b>The Drunkard\'s Walk</b><br><span class="affiliate-card-label">How randomness rules our lives</span>', url:`https://www.amazon.com/dp/0307275175?tag=${AMZ}` },
+    { emoji:'🎲', text:'<b>Random Number Cube</b><br><span class="affiliate-card-label">Physical random number generator</span>', url:`https://www.amazon.com/dp/B09XYZ?tag=${AMZ}` },
+  ],
+  password: [
+    { emoji:'🔒', text:'<b>1Password</b><br><span class="affiliate-card-label">The password manager we use</span>', url:`https://1password.com/` },
+    { emoji:'📖', text:'<b>Password Log Book</b><br><span class="affiliate-card-label">Keep passwords offline</span>', url:`https://www.amazon.com/dp/B08DEF?tag=${AMZ}` },
+  ],
+  matrix: [
+    { emoji:'📚', text:'<b>Principles</b> by Ray Dalio<br><span class="affiliate-card-label">Decision-making frameworks</span>', url:`https://www.amazon.com/dp/1501124021?tag=${AMZ}` },
+    { emoji:'📄', text:'<b>Decision Matrix Workbook</b><br><span class="affiliate-card-label">Printable PDF template</span>', url:LEMON.matrix },
+  ],
+  picker: [
+    { emoji:'🎲', text:'<b>Decision Roulette</b><br><span class="affiliate-card-label">Spin the wheel in real life</span>', url:`https://www.amazon.com/dp/B09DEF?tag=${AMZ}` },
+    { emoji:'🎱', text:'<b>Magic 8-Ball (Official)</b><br><span class="affiliate-card-label">The real thing</span>', url:`https://www.amazon.com/dp/B00005NPPR?tag=${AMZ}` },
+  ],
+  '8ball': [
+    { emoji:'🎱', text:'<b>Official Magic 8-Ball</b><br><span class="affiliate-card-label">The classic oracle, in your hands</span>', url:`https://www.amazon.com/dp/B00005NPPR?tag=${AMZ}` },
+    { emoji:'🪙', text:'<b>Decision Coin</b><br><span class="affiliate-card-label">Heads or tails, engraved</span>', url:`https://www.amazon.com/dp/B09GHI?tag=${AMZ}` },
+  ],
+  eat: [
+    { emoji:'🍳', text:'<b>Sorted Food — Sidekick</b><br><span class="affiliate-card-label">App that decides what you eat</span>', url:`https://www.sortedfood.com/sidekick` },
+    { emoji:'📖', text:'<b>The Food Lab</b><br><span class="affiliate-card-label">Science of good cooking</span>', url:`https://www.amazon.com/dp/0393081087?tag=${AMZ}` },
+  ],
+  rps: [
+    { emoji:'✂️', text:'<b>Rock Paper Scissors Game</b><br><span class="affiliate-card-label">Battery-powered arcade version</span>', url:`https://www.amazon.com/dp/B09JKL?tag=${AMZ}` },
+    { emoji:'🎲', text:'<b>Board Game Night Bundle</b><br><span class="affiliate-card-label">10 classic party games</span>', url:`https://www.amazon.com/dp/B0CMN?tag=${AMZ}` },
+  ],
+  team: [
+    { emoji:'📋', text:'<b>Team Formation Cards</b><br><span class="affiliate-card-label">Fair team building IRL</span>', url:`https://www.amazon.com/dp/B0MNO?tag=${AMZ}` },
+    { emoji:'💼', text:'<b>Trello Premium</b><br><span class="affiliate-card-label">Organize team workflows</span>', url:`https://trello.com/` },
+  ],
+  namegen: [
+    { emoji:'📖', text:'<b>The Baby Name Wizard</b><br><span class="affiliate-card-label">50,000+ name meanings</span>', url:`https://www.amazon.com/dp/0767921469?tag=${AMZ}` },
+    { emoji:'✍️', text:'<b>Character Naming Sourcebook</b><br><span class="affiliate-card-label">For writers and gamers</span>', url:`https://www.amazon.com/dp/1582972952?tag=${AMZ}` },
+  ],
+  truthdare: [
+    { emoji:'🎉', text:'<b>Truth or Dare Card Game</b><br><span class="affiliate-card-label">500 cards, no boring rounds</span>', url:`https://www.amazon.com/dp/B07PQR?tag=${AMZ}` },
+    { emoji:'🥂', text:'<b>Party Games for Adults</b><br><span class="affiliate-card-label">10 games in one box</span>', url:`https://www.amazon.com/dp/B0STU?tag=${AMZ}` },
+  ],
+  priority: [
+    { emoji:'📋', text:'<b>Priority Master Sheet</b><br><span class="affiliate-card-label">Printable PDF, ¥28</span>', url:LEMON.priority },
+    { emoji:'📱', text:'<b>Things 3</b><br><span class="affiliate-card-label">Best priority manager on Mac/iOS</span>', url:`https://culturedcode.com/things/` },
+  ],
+};
+
+/* ============================================
+   RENDER TOOL CARDS
+   ============================================ */
+function renderTools() {
+  const grid = document.getElementById('toolGrid');
+  grid.innerHTML = TOOLS.map(t => {
+    const featClass = t.featured ? ' featured' : '';
+    const colSpan = t.featured ? ' style="grid-column:span 6"' : '';
+    const bodyExtra = t.featured ? '<div class="tool-body">' : '';
+    const bodyClose = t.featured ? '</div>' : '';
+    return `<article class="tool-card${featClass}" onclick="openTool('${t.id}')" data-tool="${t.id}"${colSpan}>
+      ${t.featured ? `<div class="tool-icon">${t.icon}</div>` : ''}
+      ${bodyExtra}
+        ${!t.featured ? `<div class="tool-icon">${t.icon}</div>` : ''}
+        <span class="tool-tag">${t.tag}</span>
+        <h3 class="tool-name">${t.name}</h3>
+        <p class="tool-desc">${t.desc}</p>
+        <span class="tool-link">Try it now</span>
+      ${bodyClose}
+    </article>`;
+  }).join('');
+}
+
+/* ============================================
+   OPEN / CLOSE TOOL MODAL
+   ============================================ */
+let currentTool = null;
+
+function openTool(id) {
+  currentTool = id;
+  const tool = TOOLS.find(t => t.id === id);
+  if (!tool) return;
+
+  document.getElementById('toolModalTitle').innerHTML = `${tool.icon} ${tool.name}`;
+  const body = document.getElementById('toolModalBody');
+  body.innerHTML = `<div id="toolContent"></div>`;
+  document.getElementById('toolModalOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+
+  renderToolContent(id);
+  gtag('event', 'tool_open', { 'tool': id });
+}
+
+function closeTool() {
+  document.getElementById('toolModalOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+  currentTool = null;
+}
+
+/* ============================================
+   RENDER TOOL CONTENT + AFFILIATE RECS
+   ============================================ */
+function renderToolContent(id) {
+  const container = document.getElementById('toolContent');
+  if (!container) return;
+
+  let html = '';
+  switch(id) {
+    case 'coin': html = renderCoinFlip(); break;
+    case 'yesno': html = renderYesNo(); break;
+    case 'dice': html = renderDice(); break;
+    case 'random': html = renderRandomNum(); break;
+    case 'rps': html = renderRPS(); break;
+    case '8ball': html = renderEightBall(); break;
+    case 'password': html = renderPassword(); break;
+    case 'picker': html = renderPicker(); break;
+    case 'eat': html = renderEat(); break;
+    case 'matrix': html = renderMatrix(); break;
+    case 'team': html = renderTeam(); break;
+    case 'namegen': html = renderNameGen(); break;
+    case 'truthdare': html = renderTruthDare(); break;
+    case 'priority': html = renderPriority(); break;
+    default: html = '<p>Tool loading...</p>';
+  }
+
+  // Add affiliate recommendations
+  const recs = AFFILIATES[id] || [];
+  if (recs.length > 0) {
+    html += `<div class="affiliate-recs">
+      <div class="affiliate-recs-label">✨ You might also like</div>
+      <div class="affiliate-recs-grid">
+        ${recs.map(r => `<a href="${r.url}" target="_blank" rel="noopener" class="affiliate-card" onclick="gtag('event','affiliate_click',{'tool':'${id}','url':'${r.url}'})">
+          <span class="affiliate-card-emoji">${r.emoji}</span>
+          <span class="affiliate-card-text">${r.text}</span>
+        </a>`).join('')}
+      </div>
+      <p class="affiliate-disclosure">Some links are affiliate links. We may earn a commission at no extra cost to you.</p>
+    </div>`;
+  }
+
+  // Add coffee link
+  html += `<div style="text-align:center;margin-top:var(--space-lg);padding-top:var(--space-md);border-top:1px solid var(--border-light)">
+    <span style="font-size:0.75rem;color:var(--text-muted)">❤️ Find this tool useful?</span>
+    <br>
+    <a href="https://buymeacoffee.com/${BMC}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:0.875rem;font-weight:500;color:var(--accent)" onclick="gtag('event','tool_bmc',{'tool':'${id}'})">☕ Buy me a coffee</a>
+  </div>`;
+
+  container.innerHTML = html;
+}
+
+/* ============================================
+   TOOL 1: COIN FLIP
+   ============================================ */
+function renderCoinFlip() {
+  return `<div class="tool-result-area" id="coinResult">
+    <div class="tool-result-value" id="coinValue">🪙</div>
+    <div class="tool-result-label" id="coinLabel">Tap to flip</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="flipCoin()">Flip the coin</button>
+  </div>`;
+}
+
+function flipCoin() {
+  const result = Math.random() < 0.5 ? 'Heads' : 'Tails';
+  const emoji = result === 'Heads' ? '🐦' : '🦅';
+  const area = document.getElementById('coinResult');
+  const val = document.getElementById('coinValue');
+  const label = document.getElementById('coinLabel');
+
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth; // force reflow
+  area.classList.add('tool-result-animating');
+  val.textContent = emoji;
+  label.textContent = `It's ${result}!`;
+  gtag('event','tool_result',{'tool':'coin','result':result});
+}
+
+/* ============================================
+   TOOL 2: YES / NO GENERATOR
+   ============================================ */
+function renderYesNo() {
+  return `<div class="tool-input-group">
+    <label for="ynQuestion">Your question</label>
+    <input type="text" id="ynQuestion" placeholder="Should I take that job?">
+  </div>
+  <div class="tool-result-area" id="ynResult">
+    <div class="tool-result-value" id="ynValue">❓</div>
+    <div class="tool-result-label" id="ynLabel">Ask and receive</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="askYesNo()">Ask the oracle</button>
+  </div>`;
+}
+
+function askYesNo() {
+  const answers = ['Yes', 'No', 'Absolutely', 'Not a chance', 'Definitely', 'Ask again later', 'Hell yes', 'Nope', 'Go for it', 'Better not'];
+  const answer = answers[Math.floor(Math.random() * answers.length)];
+  const val = document.getElementById('ynValue');
+  const label = document.getElementById('ynLabel');
+  const area = document.getElementById('ynResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = answer;
+  label.textContent = 'The oracle has spoken';
+  gtag('event','tool_result',{'tool':'yesno','result':answer});
+}
+
+/* ============================================
+   TOOL 3: DICE ROLLER
+   ============================================ */
+function renderDice() {
+  return `<div class="tool-options-row" style="margin-bottom:var(--space-lg)">
+    <div class="tool-input-group" style="flex:1">
+      <label>Number of dice</label>
+      <input type="number" id="diceCount" value="1" min="1" max="100">
+    </div>
+    <div class="tool-input-group" style="flex:1">
+      <label>Sides per die</label>
+      <select id="diceSides">
+        <option value="4">d4</option>
+        <option value="6" selected>d6</option>
+        <option value="8">d8</option>
+        <option value="10">d10</option>
+        <option value="12">d12</option>
+        <option value="20">d20</option>
+        <option value="100">d100</option>
+      </select>
+    </div>
+  </div>
+  <div class="tool-result-area" id="diceResult">
+    <div class="tool-result-value" id="diceValue">🎲</div>
+    <div class="tool-result-label" id="diceLabel">Roll the dice</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="rollDice()">Roll!</button>
+  </div>`;
+}
+
+function rollDice() {
+  const count = parseInt(document.getElementById('diceCount').value) || 1;
+  const sides = parseInt(document.getElementById('diceSides').value) || 6;
+  const rolls = Array.from({length: count}, () => Math.floor(Math.random() * sides) + 1);
+  const total = rolls.reduce((a,b) => a+b, 0);
+  const val = document.getElementById('diceValue');
+  const label = document.getElementById('diceLabel');
+  const area = document.getElementById('diceResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  if (count === 1) {
+    val.textContent = `🎲 ${total}`;
+    label.textContent = `Rolled a d${sides}: ${total}`;
+  } else {
+    val.textContent = `🎲 ${total}`;
+    label.textContent = `${count}d${sides}: [${rolls.join(', ')}] = ${total}`;
+  }
+  gtag('event','tool_result',{'tool':'dice','result':total});
+}
+
+/* ============================================
+   TOOL 4: RANDOM NUMBER
+   ============================================ */
+function renderRandomNum() {
+  return `<div class="tool-options-row">
+    <div class="tool-input-group" style="flex:1">
+      <label>Min</label>
+      <input type="number" id="randMin" value="1">
+    </div>
+    <div class="tool-input-group" style="flex:1">
+      <label>Max</label>
+      <input type="number" id="randMax" value="100">
+    </div>
+  </div>
+  <div class="tool-result-area" id="randResult">
+    <div class="tool-result-value" id="randValue">🔢</div>
+    <div class="tool-result-label" id="randLabel">Set range, generate</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="genRandom()">Generate</button>
+  </div>`;
+}
+
+function genRandom() {
+  const min = parseInt(document.getElementById('randMin').value) || 0;
+  const max = parseInt(document.getElementById('randMax').value) || 100;
+  const result = Math.floor(Math.random() * (max - min + 1)) + min;
+  const val = document.getElementById('randValue');
+  const label = document.getElementById('randLabel');
+  const area = document.getElementById('randResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = result;
+  label.textContent = `Between ${min} and ${max}`;
+  gtag('event','tool_result',{'tool':'random','result':result});
+}
+
+/* ============================================
+   TOOL 5: ROCK PAPER SCISSORS
+   ============================================ */
+function renderRPS() {
+  return `<div class="tool-result-area" id="rpsResult">
+    <div class="tool-result-value" id="rpsValue">✂️</div>
+    <div class="tool-result-label" id="rpsLabel">Pick your weapon</div>
+  </div>
+  <div style="display:flex;justify-content:center;gap:var(--space-md);flex-wrap:wrap">
+    <button class="tool-btn" onclick="playRPS('rock')">🪨 Rock</button>
+    <button class="tool-btn" onclick="playRPS('paper')">📄 Paper</button>
+    <button class="tool-btn" onclick="playRPS('scissors')">✂️ Scissors</button>
+  </div>`;
+}
+
+function playRPS(player) {
+  const choices = ['rock','paper','scissors'];
+  const emojis = {rock:'🪨',paper:'📄',scissors:'✂️'};
+  const computer = choices[Math.floor(Math.random() * 3)];
+  let result;
+  if (player === computer) result = 'Tie!';
+  else if ((player === 'rock' && computer === 'scissors') ||
+           (player === 'paper' && computer === 'rock') ||
+           (player === 'scissors' && computer === 'paper')) result = 'You win!';
+  else result = 'Computer wins!';
+  const val = document.getElementById('rpsValue');
+  const label = document.getElementById('rpsLabel');
+  const area = document.getElementById('rpsResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = `${emojis[player]} vs ${emojis[computer]}`;
+  label.textContent = result;
+  gtag('event','tool_result',{'tool':'rps','result':result});
+}
+
+/* ============================================
+   TOOL 6: MAGIC 8-BALL
+   ============================================ */
+function renderEightBall() {
+  return `<div class="tool-input-group">
+    <label>Ask the 8-ball anything</label>
+    <input type="text" id="ballQuestion" placeholder="Will I get that promotion?">
+  </div>
+  <div class="tool-result-area" id="ballResult">
+    <div class="tool-result-value" id="ballValue">🎱</div>
+    <div class="tool-result-label" id="ballLabel">Ask away</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="shakeBall()">🔮 Shake the 8-ball</button>
+  </div>`;
+}
+
+function shakeBall() {
+  const responses = [
+    'It is certain', 'It is decidedly so', 'Without a doubt', 'Yes definitely',
+    'You may rely on it', 'As I see it, yes', 'Most likely', 'Outlook good',
+    'Yes', 'Signs point to yes', 'Reply hazy, try again', 'Ask again later',
+    'Better not tell you now', 'Cannot predict now', 'Concentrate and ask again',
+    'Don\'t count on it', 'My reply is no', 'My sources say no',
+    'Outlook not so good', 'Very doubtful'
+  ];
+  const answer = responses[Math.floor(Math.random() * responses.length)];
+  const val = document.getElementById('ballValue');
+  const label = document.getElementById('ballLabel');
+  const area = document.getElementById('ballResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = '🎱';
+  label.textContent = answer;
+  gtag('event','tool_result',{'tool':'8ball','result':answer});
+}
+
+/* ============================================
+   TOOL 7: PASSWORD GENERATOR
+   ============================================ */
+function renderPassword() {
+  return `<div class="tool-options-row" style="margin-bottom:var(--space-lg)">
+    <div class="tool-input-group" style="flex:1">
+      <label>Length</label>
+      <input type="number" id="pwLength" value="16" min="6" max="64">
+    </div>
+    <div class="tool-input-group" style="display:flex;flex-direction:row;gap:var(--space-md);padding-top:1.5rem">
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:400">
+        <input type="checkbox" id="pwUpper" checked> A-Z
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:400">
+        <input type="checkbox" id="pwLower" checked> a-z
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:400">
+        <input type="checkbox" id="pwNum" checked> 0-9
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.875rem;font-weight:400">
+        <input type="checkbox" id="pwSym" checked> !@#
+      </label>
+    </div>
+  </div>
+  <div class="tool-result-area" id="pwResult">
+    <div class="tool-result-value" id="pwValue" style="font-size:clamp(1rem,3vw,2rem);word-break:break-all">🔑</div>
+    <div class="tool-result-label" id="pwLabel">Generate a strong password</div>
+  </div>
+  <div style="text-align:center;display:flex;gap:var(--space-sm);justify-content:center">
+    <button class="tool-btn" onclick="genPassword()">Generate</button>
+    <button class="tool-btn tool-btn-outline" onclick="copyPassword()">Copy</button>
+  </div>`;
+}
+
+function genPassword() {
+  const len = parseInt(document.getElementById('pwLength').value) || 16;
+  const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const lower = 'abcdefghijklmnopqrstuvwxyz';
+  const nums = '0123456789';
+  const syms = '!@#$%^&*()-_=+[]{}|;:,.<>?';
+  let chars = '';
+  if (document.getElementById('pwUpper').checked) chars += upper;
+  if (document.getElementById('pwLower').checked) chars += lower;
+  if (document.getElementById('pwNum').checked) chars += nums;
+  if (document.getElementById('pwSym').checked) chars += syms;
+  if (!chars) chars = lower + nums;
+  let pw = '';
+  for (let i = 0; i < len; i++) pw += chars[Math.floor(Math.random() * chars.length)];
+  document.getElementById('pwValue').textContent = pw;
+  document.getElementById('pwLabel').textContent = `${len} character password`;
+  window._lastPw = pw;
+  gtag('event','tool_result',{'tool':'password'});
+}
+
+function copyPassword() {
+  if (window._lastPw) {
+    navigator.clipboard.writeText(window._lastPw).then(() => {
+      document.getElementById('pwLabel').textContent = 'Copied!';
+    });
+  }
+}
+
+/* ============================================
+   TOOL 8: RANDOM PICKER
+   ============================================ */
+function renderPicker() {
+  return `<div class="tool-input-group">
+    <label>Enter options (one per line)</label>
+    <textarea id="pickerOptions" placeholder="Pizza&#10;Sushi&#10;Burgers&#10;Tacos">Pizza\nSushi\nBurgers\nTacos</textarea>
+  </div>
+  <div class="tool-result-area" id="pickerResult">
+    <div class="tool-result-value" id="pickerValue">🎲</div>
+    <div class="tool-result-label" id="pickerLabel">Enter options, pick one</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="runPicker()">Pick one</button>
+  </div>`;
+}
+
+function runPicker() {
+  const text = document.getElementById('pickerOptions').value;
+  const options = text.split('\n').map(s => s.trim()).filter(s => s);
+  if (options.length < 2) { document.getElementById('pickerLabel').textContent = 'Need at least 2 options'; return; }
+  const pick = options[Math.floor(Math.random() * options.length)];
+  const val = document.getElementById('pickerValue');
+  const label = document.getElementById('pickerLabel');
+  const area = document.getElementById('pickerResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = '🎯';
+  label.textContent = `The pick: ${pick}`;
+  gtag('event','tool_result',{'tool':'picker','result':pick});
+}
+
+/* ============================================
+   TOOL 9: WHAT TO EAT
+   ============================================ */
+function renderEat() {
+  return `<div class="tool-result-area" id="eatResult">
+    <div class="tool-result-value" id="eatValue">🍔</div>
+    <div class="tool-result-label" id="eatLabel">Can't decide what to eat?</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="pickFood()">Pick for me</button>
+  </div>`;
+}
+
+function pickFood() {
+  const foods = [['🍕','Pizza'],['🍔','Burgers'],['🌮','Tacos'],['🍜','Ramen'],['🥗','Salad'],['🍣','Sushi'],['🥪','Sandwich'],['🍝','Pasta'],['🍛','Curry'],['🥟','Dim Sum'],['🌯','Burrito'],['🍲','Hot Pot'],['🥩','Steak'],['🍱','Bento'],['🥘','Paella'],['🍩','Donuts']];
+  const pick = foods[Math.floor(Math.random() * foods.length)];
+  const val = document.getElementById('eatValue');
+  const label = document.getElementById('eatLabel');
+  const area = document.getElementById('eatResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = pick[0];
+  label.textContent = `Eat: ${pick[1]}`;
+  gtag('event','tool_result',{'tool':'eat','result':pick[1]});
+}
+
+/* ============================================
+   TOOL 10: NAME GENERATOR
+   ============================================ */
+function renderNameGen() {
+  return `<div class="tool-result-area" id="nameResult">
+    <div class="tool-result-value" id="nameValue" style="font-size:clamp(2rem,4vw,3rem)">📝</div>
+    <div class="tool-result-label" id="nameLabel">Generate a random name</div>
+  </div>
+  <div style="text-align:center;display:flex;gap:var(--space-sm);justify-content:center">
+    <button class="tool-btn" onclick="genName()">Generate</button>
+  </div>`;
+}
+
+function genName() {
+  const first = ['Luna','Felix','Aria','Leo','Nova','Milo','Iris','Finn','Zara','Theo','Maya','Kai','Eden','Jade','River','Ace','Skye','Cole','Wren','Jazz'];
+  const last = ['Stone','River','Gray','Wells','Fox','Blake','Reed','Hart','Cole','Bishop','Drake','Pierce','Vance','Quinn','Shaw','Hayes','Ward','Cross','Bond','Knight'];
+  const name = `${first[Math.floor(Math.random()*first.length)]} ${last[Math.floor(Math.random()*last.length)]}`;
+  const val = document.getElementById('nameValue');
+  const label = document.getElementById('nameLabel');
+  const area = document.getElementById('nameResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = name;
+  label.textContent = 'Random generated name';
+  gtag('event','tool_result',{'tool':'namegen','result':name});
+}
+
+/* ============================================
+   TOOL 11: TRUTH OR DARE
+   ============================================ */
+function renderTruthDare() {
+  return `<div style="display:flex;gap:var(--space-md);justify-content:center;margin-bottom:var(--space-lg)">
+    <button class="tool-btn" onclick="truthOrDare('truth')">🤫 Truth</button>
+    <button class="tool-btn" onclick="truthOrDare('dare')">🔥 Dare</button>
+  </div>
+  <div class="tool-result-area" id="tdResult">
+    <div class="tool-result-value" id="tdValue" style="font-size:clamp(1.25rem,3vw,2rem)">🎉</div>
+    <div class="tool-result-label" id="tdLabel">Pick Truth or Dare</div>
+  </div>`;
+}
+
+function truthOrDare(type) {
+  const truths = [
+    'What\'s the most embarrassing thing you\'ve done in public?',
+    'Have you ever lied to your best friend?',
+    'What\'s your biggest secret?',
+    'Who was your first crush?',
+    'What\'s the worst date you\'ve been on?',
+    'Have you ever cheated on a test?',
+    'What\'s something you\'ve never told anyone?',
+    'What\'s your biggest fear in a relationship?',
+    'Have you ever broken something and blamed someone else?',
+    'What\'s the most trouble you\'ve ever been in?',
+  ];
+  const dares = [
+    'Do your best impression of someone in the room.',
+    'Sing the chorus of your favorite song out loud.',
+    'Send a funny text to the last person you messaged.',
+    'Do 10 push-ups right now.',
+    'Speak in an accent for the next 3 rounds.',
+    'Let someone write a word on your forehead with a marker.',
+    'Call a friend and tell them you love them.',
+    'Eat a spoonful of something spicy/sour.',
+    'Do a dramatic reading of the last text you sent.',
+    'Post a funny selfie on social media.',
+  ];
+  const pool = type === 'truth' ? truths : dares;
+  const pick = pool[Math.floor(Math.random() * pool.length)];
+  const val = document.getElementById('tdValue');
+  const label = document.getElementById('tdLabel');
+  const area = document.getElementById('tdResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = type === 'truth' ? '🤫' : '🔥';
+  label.textContent = pick;
+  gtag('event','tool_result',{'tool':'truthdare','type':type});
+}
+
+/* ============================================
+   TOOL 12: TEAM PICKER
+   ============================================ */
+function renderTeam() {
+  return `<div class="tool-input-group">
+    <label>Names (comma or newline separated)</label>
+    <textarea id="teamNames" placeholder="Alice, Bob, Charlie, Diana, Eve">Alice, Bob, Charlie, Diana, Eve</textarea>
+  </div>
+  <div class="tool-input-group">
+    <label>Number of teams</label>
+    <input type="number" id="teamCount" value="2" min="2" max="20">
+  </div>
+  <div class="tool-result-area" id="teamResult">
+    <div class="tool-result-value" id="teamValue" style="font-size:clamp(1rem,2.5vw,1.5rem)">👥</div>
+    <div class="tool-result-label" id="teamLabel">Enter names, split into teams</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="splitTeams()">Split into teams</button>
+  </div>`;
+}
+
+function splitTeams() {
+  const text = document.getElementById('teamNames').value;
+  const names = text.split(/[,\n]/).map(s => s.trim()).filter(s => s);
+  const teamCount = parseInt(document.getElementById('teamCount').value) || 2;
+  if (names.length < teamCount) { document.getElementById('teamLabel').textContent = 'Need more people'; return; }
+  const shuffled = [...names].sort(() => Math.random() - 0.5);
+  const teams = Array.from({length: teamCount}, () => []);
+  shuffled.forEach((name, i) => teams[i % teamCount].push(name));
+  const val = document.getElementById('teamValue');
+  const label = document.getElementById('teamLabel');
+  const area = document.getElementById('teamResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = '✅';
+  label.textContent = teams.map((t, i) => `Team ${i+1}: ${t.join(', ')}`).join(' | ');
+  gtag('event','tool_result',{'tool':'team'});
+}
+
+/* ============================================
+   TOOL 13: DECISION MATRIX (SIMPLIFIED)
+   ============================================ */
+function renderMatrix() {
+  return `<div class="tool-input-group">
+    <label>Your options (one per line)</label>
+    <textarea id="matrixOptions" placeholder="Option A&#10;Option B">Option A\nOption B</textarea>
+  </div>
+  <div class="tool-input-group">
+    <label>Your criteria (comma separated, include weights like "cost(8)")</label>
+    <input type="text" id="matrixCriteria" value="Cost(8), Quality(6), Speed(4)" placeholder="Cost(8), Quality(6)">
+  </div>
+  <div class="tool-result-area" id="matrixResult">
+    <div class="tool-result-value" id="matrixValue" style="font-size:clamp(1.25rem,3vw,2rem)">📊</div>
+    <div class="tool-result-label" id="matrixLabel">Enter options + criteria, calculate</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn" onclick="calcMatrix()">Calculate</button>
+  </div>`;
+}
+
+function calcMatrix() {
+  const optText = document.getElementById('matrixOptions').value;
+  const options = optText.split('\n').map(s => s.trim()).filter(s => s);
+  const critText = document.getElementById('matrixCriteria').value;
+  const criteria = critText.split(',').map(s => s.trim()).filter(s => s);
+
+  if (options.length < 2 || criteria.length < 1) {
+    document.getElementById('matrixLabel').textContent = 'Need at least 2 options and 1 criterion';
+    return;
+  }
+
+  // Parse criteria with weights
+  const parsed = criteria.map(c => {
+    const match = c.match(/^(.+?)(?:\((\d+)\))?\s*$/);
+    return { name: match ? match[1].trim() : c, weight: match && match[2] ? parseInt(match[2]) : 5 };
+  });
+
+  // Simulate scoring (in a real app, user would input scores)
+  const scores = options.map(opt => {
+    let total = 0;
+    parsed.forEach(c => {
+      total += c.weight * (Math.floor(Math.random() * 5) + 1);
+    });
+    return { name: opt, score: total };
+  });
+  scores.sort((a, b) => b.score - a.score);
+
+  const val = document.getElementById('matrixValue');
+  const label = document.getElementById('matrixLabel');
+  const area = document.getElementById('matrixResult');
+  area.classList.remove('tool-result-animating');
+  void area.offsetWidth;
+  area.classList.add('tool-result-animating');
+  val.textContent = `🏆 ${scores[0].name}`;
+  label.textContent = scores.map(s => `${s.name}: ${s.score}`).join(' · ');
+  gtag('event','tool_result',{'tool':'matrix'});
+}
+
+/* ============================================
+   TOOL 14: PRIORITY LIST
+   ============================================ */
+let priorityItems = [];
+
+function renderPriority() {
+  return `<div style="display:flex;gap:var(--space-sm);margin-bottom:var(--space-lg)">
+    <input type="text" id="priorityInput" placeholder="Add a task..." style="flex:1;padding:0.625rem 0.875rem;border:1px solid var(--border);border-radius:2px;font-family:var(--font-body);font-size:0.9375rem" onkeydown="if(event.key==='Enter')addPriority()">
+    <button class="tool-btn" onclick="addPriority()" style="padding:0.625rem 1rem">Add</button>
+  </div>
+  <div id="priorityList" style="min-height:60px"></div>
+  <div class="tool-result-area" id="priorityResult" style="padding:var(--space-md) 0;min-height:auto">
+    <div class="tool-result-value" style="font-size:1rem;font-weight:400" id="priorityValue">📋</div>
+    <div class="tool-result-label" id="priorityLabel">Add tasks, then reorder by dragging</div>
+  </div>
+  <div style="text-align:center">
+    <button class="tool-btn tool-btn-outline" onclick="clearPriorities()">Clear all</button>
+  </div>`;
+}
+
+function addPriority() {
+  const input = document.getElementById('priorityInput');
+  const text = input.value.trim();
+  if (!text) return;
+  priorityItems.push({ id: Date.now(), text, done: false });
+  input.value = '';
+  renderPriorityList();
+  gtag('event','tool_result',{'tool':'priority','action':'add'});
+}
+
+function renderPriorityList() {
+  const list = document.getElementById('priorityList');
+  if (!list) return;
+  if (priorityItems.length === 0) {
+    list.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:var(--space-lg)">No tasks yet. Add one above.</p>';
+    document.getElementById('priorityValue').textContent = '📋';
+    document.getElementById('priorityLabel').textContent = 'Add tasks, then reorder';
+    return;
+  }
+  list.innerHTML = priorityItems.map((item, i) => `
+    <div style="display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--border-light);margin-bottom:6px;border-radius:2px;background:var(--surface-1);cursor:grab" draggable="true" ondragstart="dragPriority(event,${i})" ondrop="dropPriority(event,${i})" ondragover="event.preventDefault()">
+      <span style="color:var(--text-muted);font-size:0.75rem;min-width:20px">${i+1}.</span>
+      <span style="flex:1;${item.done?'text-decoration:line-through;color:var(--text-muted)':''}">${item.text}</span>
+      <button style="background:none;border:none;cursor:pointer;font-size:0.875rem;color:var(--text-muted);padding:2px" onclick="togglePriority(${item.id})">${item.done?'↩️':'✅'}</button>
+      <button style="background:none;border:none;cursor:pointer;font-size:0.875rem;color:var(--text-muted);padding:2px" onclick="removePriority(${item.id})">✕</button>
+    </div>
+  `).join('');
+  document.getElementById('priorityValue').textContent = `📋 ${priorityItems.filter(i => !i.done).length} remaining`;
+  document.getElementById('priorityLabel').textContent = `${priorityItems.length} tasks total`;
+}
+
+function togglePriority(id) {
+  const item = priorityItems.find(i => i.id === id);
+  if (item) { item.done = !item.done; renderPriorityList(); }
+}
+
+function removePriority(id) {
+  priorityItems = priorityItems.filter(i => i.id !== id);
+  renderPriorityList();
+}
+
+function clearPriorities() {
+  priorityItems = [];
+  renderPriorityList();
+}
+
+function dragPriority(e, index) {
+  e.dataTransfer.setData('text/plain', index);
+}
+
+function dropPriority(e, targetIndex) {
+  e.preventDefault();
+  const sourceIndex = parseInt(e.dataTransfer.getData('text/plain'));
+  if (isNaN(sourceIndex) || sourceIndex === targetIndex) return;
+  const [moved] = priorityItems.splice(sourceIndex, 1);
+  priorityItems.splice(targetIndex, 0, moved);
+  renderPriorityList();
+}
+
+/* ============================================
+   SUPPORT POPUP
+   ============================================ */
+let supportOpen = false;
+function toggleSupportPopup() {
+  supportOpen = !supportOpen;
+  document.getElementById('supportPopup').classList.toggle('active', supportOpen);
+}
+function closeSupportPopup() {
+  supportOpen = false;
+  document.getElementById('supportPopup').classList.remove('active');
+}
+
+// Close support popup on click outside
+document.addEventListener('click', function(e) {
+  const popup = document.getElementById('supportPopup');
+  const btn = document.querySelector('.floating-support');
+  if (supportOpen && !popup.contains(e.target) && !btn.contains(e.target)) {
+    closeSupportPopup();
+  }
+});
+
+/* ============================================
+   EMAIL SUBSCRIPTION
+   ============================================ */
+function handleEmailSubmit(e) {
+  e.preventDefault();
+  const input = e.target.querySelector('input[type="email"]') || document.getElementById('emailInput');
+  const email = input.value.trim();
+  if (!email) return false;
+
+  // In production: send to Mailchimp / ConvertKit API
+  // For now, show success
+  const form = e.target;
+  form.innerHTML = '<p style="color:var(--brand);font-weight:500">✅ You\'re in! Check your inbox for a welcome note.</p>';
+  gtag('event', 'email_subscribe', { 'email': email });
+  closeEmailModal();
+  return false;
+}
+
+/* ============================================
+   EMAIL MODAL (timed popup)
+   ============================================ */
+function showEmailModal() {
+  if (localStorage.getItem('dt_email_shown')) return;
+  document.getElementById('emailModal').classList.add('active');
+  localStorage.setItem('dt_email_shown', 'true');
+}
+
+function closeEmailModal() {
+  document.getElementById('emailModal').classList.remove('active');
+}
+
+// Show email modal after 30 seconds
+setTimeout(showEmailModal, 30000);
+
+// Also show after 3 tool uses
+let toolUseCount = 0;
+const origGtag = window.gtag;
+window.gtag = function() {
+  if (arguments[0] === 'event' && arguments[1] === 'tool_result') {
+    toolUseCount++;
+    if (toolUseCount === 3) showEmailModal();
+  }
+  if (typeof origGtag === 'function') origGtag.apply(this, arguments);
+};
+
+/* ============================================
+   KEYBOARD SHORTCUTS
+   ============================================ */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    if (document.getElementById('toolModalOverlay').classList.contains('active')) closeTool();
+    if (document.getElementById('emailModal').classList.contains('active')) closeEmailModal();
+    if (supportOpen) closeSupportPopup();
+  }
+});
+
+/* ============================================
+   INIT
+   ============================================ */
+document.addEventListener('DOMContentLoaded', function() {
+  renderTools();
+
+  // Update GA ID if configured
+  if (GA && GA !== 'G-72W2MM2RGK') {
+    document.querySelectorAll('script[src*="googletagmanager"]').forEach(s => {
+      s.src = `https://www.googletagmanager.com/gtag/js?id=${GA}`;
+    });
+  }
+
+  // Tracker
+  gtag('event', 'page_view', { 'page_title': 'Decision Terminator' });
+});
+</script>
+</body>
+</html>
